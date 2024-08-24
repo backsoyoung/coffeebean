@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+
+/* index.css ****************************** */
+
+/* @import url(header.css); */
+
+main {
+    margin-top: 140px; /* 고정된 header의 총 높이만큼 */
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+main article.promotion {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 700px;
+    background: url(../img/main_forest.jpg) no-repeat center/cover;
+}
+main article.promotion a {
+    width: 100%;
+    height: 100%;
+
+    font-size: 0;
+}
+
+main article.event {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+main article.event a img {
+    width: 100%;
+    display: block;
+}
+
+/* article1 md's pick */
+article.md-pick {
+    width: 1280px;
+    margin: 0 auto 100px;
+}
+
+article.md-pick .md-wrap .md-box {
+    width: 25%;
+    float: left;
+}
+
+.md-box .photo {
+    margin-bottom: 30px;
+    position: relative;
+}
+.md-box .photo img {
+    width: 100%;
+    display: block;
+}
+.md-box .photo .quick {
+    background-color: rgb(243, 130, 0);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.4px;
+
+    /* 버튼 만들기1 */
+    /* width: 140px;
+    text-align: center;
+    line-height: 50px; */
+
+    /* 버튼 만들기2 */
+    display: inline-block;
+    padding: 10px 20px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+}
+.md-box .photo:hover img {
+    opacity: 0.4;
+}
+.md-box .photo:hover .quick {
+    display: inline-block;
+}
+
+.md-box .caption {
+    padding: 0 5%;
+    text-align: center;
+}
+.md-box .caption h3.name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.md-box .caption p span {
+    display: block;
+}
+.md-box .caption p span.des {
+    margin-bottom: 10px;
+}
+.md-box .caption p span.price {
+    font-weight: 700;
+    color: rgb(207, 102, 26);
+}
+
+
+
+
+
+/* article2 what's new */
+article.new {
+    width: 1280px;
+    margin: 100px auto;
+}
+article.new .new-box {
+    float: left;
+    width: 32%;
+}
+article.new .new-box ~ .new-box {
+    margin-left: 2%;
+}
+article.new .new-box > a {
+    /* outline: 2px solid red; */
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+article.new .new-box > a img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+article.new .new-box > a:hover img {
+    transform: scale(1.5);
+}
+
+article.new .new-box h3 {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+}
+article.new .new-box h3 a {
+    color: rgb(207,102,26);
+}
+article.new .new-box h3 a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* article3 instagram */
+article.instagram {
+    width: 100%;
+    background-color: rgb(124, 81, 116);
+    padding: 60px 0;
+}
+article.instagram .sec-tit {
+    color: rgb(255, 255, 255);
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+article.instagram .thumb-list {
+    margin-bottom: 50px;
+    /* background-color: rgb(243, 130, 0); */
+}
+article.instagram .thumb-list li {
+    width: 16.66%;
+    overflow: hidden;
+}
+article.instagram .thumb-list li:hover img {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+article.instagram .thumb-list li a img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease-in-out;/* 바뀌는 대상에 적용 */
+}
+
+article.instagram .followbtn {
+    color: rgb(255,255,255);
+    background-color: rgb(243, 130, 0);
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+
+    display: inline-block; /* 내용만큼 크기를 가지게 */
+    padding: 10px 20px;
+
+    /* 버튼 위치 조절 */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 2. text-align으로 버튼 위치 조절하기 */
+article.instagram .followbtn2 {
+    margin-top: 50px;
+    text-align: center;
+    outline: 2px solid lime;
+}
+article.instagram .followbtn2 a {
+    color: rgb(255,255,255);
+    background-color: rgb(243, 130, 0);
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+
+    display: inline-block; /* 내용만큼 크기를 가지게 */
+    padding: 10px 20px;
+}

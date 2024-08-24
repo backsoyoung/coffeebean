@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+
+/* header.css *********************************** */
+
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+header a {
+    color: #333;
+}
+
+header .header-top {
+    background-color: lightgray;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+}
+header .header-top .top-menu ul {
+    float: right;
+}
+header .header-top .top-menu ul li {
+    margin-left: 20px;
+}
+header .header-top .top-menu ul li:last-child a {
+    width: 60px;
+    height: 40px;
+    /* background-color: rgb(47, 28, 17);
+    background-image: url(../img/ico_user_info_line.png);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: rgb(47, 28, 17) url(../img/ico_user_info_line.png) no-repeat center;
+
+    font-size: 0;
+}
+header .header-top .top-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+header .header-bottom {
+    width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+}
+header .header-bottom .logo {
+    float: left;
+    /* width: 20%; */
+    height: 100%; /* =100px =부모의 높이 */
+    padding: 15px 0;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+header .header-bottom .logo a img {
+    height: 70px;
+    display: block;
+}
+
+header .header-bottom .gnb {
+    float: left;
+    line-height: 100px;
+}
+header .header-bottom .gnb ul li {
+    margin: 0 20px;
+}
+header .header-bottom .gnb ul li a {
+    color: rgb(47, 28, 17);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Arial; /* 기본폰트 */
+    font-weight: 700;
+}
+header .header-bottom .gnb ul li.active a {
+    color: rgb(207, 102, 26);
+}
+header .header-bottom .gnb ul li a:hover {
+    color: rgb(207, 102, 26);
+}
+
+header .header-bottom form {
+    float: right;
+    height: 100%;
+}
+header .header-bottom form input {
+    height: 30px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-top: 35px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: 0;/* input태그는 기본적으로 outline을 가짐. 클릭했을때 생기는 테두리*/
+    color: rgb(207, 102, 26);
+}
+input::placeholder {
+    color: #ccc;
+}
+header .header-bottom form button {
+    height: 30px;
+    vertical-align: middle;
+    margin-top: 35px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;/* 투명하게 */
+}
