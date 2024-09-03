@@ -22,9 +22,6 @@ footer .sitemap .mapbox {
     width: 16.66%;
     float: left;
 }
-/* footer .sitemap .mapbox:last-child {
-    display: none;
-} */
 footer .sitemap .mapbox h3 {
     font-size: 18px;
     color: rgb(207, 102, 26);
