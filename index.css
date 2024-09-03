@@ -4,7 +4,7 @@
 /* index.css ****************************** */
 
 main {
-    margin-top: 140px; /* 고정된 header의 총 높이만큼 */
+    margin-top: 140px; 
     width: 100%;
     margin-bottom: 80px;
 }
